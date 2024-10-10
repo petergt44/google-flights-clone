@@ -9,8 +9,9 @@ function App() {
 
   const handleSearch = async (from, to, date) => {
     const results = await fetchFlights(from, to, date);
-    setFlights(results);
+    setFlights(results.flights || []); // Update to point to the correct structure
   };
+  
 
   return (
     <div className="App">
