@@ -36,3 +36,19 @@
     transform: rotate(360deg);
   }
 }
+
+form {
+  margin: 20px;
+}
+
+.flight-result {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+@media (max-width: 600px) {
+  .flight-result {
+    font-size: 14px;
+  }
+}
